@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Enter value = "firefox" and   "ie" "chrome" in parameter --> 
+
+<suite name="BNPPROJECT">
+
+<listeners>
+
+<listener class-name="com.BNPPROJECT.utilities.ListenerReporting" />
+
+</listeners>
+
+	<test name="Supply Chain Management">
+	
+		<parameter name ="browser"  value ="chrome" /> 
+	<classes>
+	 <class name ="com.BNPPROJECT.testcases.TC_LOGIN_001" /> 
+	  	<class name ="com.BNPPROJECT.testcases.TC_CREATEUSER_003" />
+<!--  	<class name ="com.BNPPROJECT.testcases.TC_BILLTYPE_004" />  -->
+	</classes>
+		
+	</test>
+
+</suite>
